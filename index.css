@@ -1,0 +1,143 @@
+body {
+  display: block;
+  background-color: rgb(61, 61, 61);
+  width: 1000px;
+  margin: auto;
+}
+/* header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+}
+header div:first-child {
+  padding-right: 550px;
+  color: white;
+}
+
+.meniu a {
+  padding-right: 20px;
+  color: rgb(255, 142, 13);
+}
+
+/* section */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* left section */
+
+.intro {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+.intro h1 {
+  color: rgb(255, 142, 13);
+  padding-left: 50px;
+  font-size: 40px;
+  margin: 0;
+}
+.intro h4 {
+  color: rgba(255, 142, 13, 0.5);
+  padding-left: 50px;
+  margin: 0;
+}
+.intro h5 {
+  color: rgb(255, 255, 255);
+  padding-left: 50px;
+  margin-top: 10px;
+}
+
+/* right section */
+
+.intro2 {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  height: 1000px;
+}
+.about-me {
+  width: 70%;
+  padding-left: 40px;
+  color: white;
+}
+/* ilgesnis pristatymas */
+.contact-me {
+  background-color: rgb(61, 61, 61);
+  color: rgb(255, 142, 13);
+  border-radius: 10px;
+  border: 2px solid rgb(255, 146, 13);
+  padding: 5px 25px;
+}
+.contact-me:hover {
+  background-color: rgb(255, 142, 13);
+  color: rgb(61, 61, 61);
+  transition: 1s;
+}
+/* pasiulymai */
+
+.proposals {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.article-icons {
+  padding: 10px 20px;
+  color: rgb(255, 142, 13);
+  font-size: 40px;
+}
+
+i {
+  padding: 0px 40px;
+}
+
+.article-web {
+  padding: 0px 15px;
+  color: rgb(255, 142, 13);
+}
+
+.article-instuction {
+  color: white;
+  text-align: center;
+}
+
+/* let me get you a beautiful website */
+
+.let-get {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#let-get-title {
+  color: white;
+  padding: 50px 0px;
+}
+
+#hire-me {
+  width: 150px;
+  border: 2px solid rgb(255, 142, 13);
+  background-color: rgb(61, 61, 61);
+  color: rgb(255, 146, 13);
+  border-radius: 10px;
+  padding: 5px 25px;
+}
+#hire-me:hover {
+  background-color: rgb(255, 142, 13);
+  color: rgb(61, 61, 61);
+  transition: 1s;
+}
+
+/* footer */
+footer {
+  background-color: brown;
+  width: auto;
+  height: 50px;
+}
