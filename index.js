@@ -1,5 +1,3 @@
-import { generateAlbums } from "./title.js";
-
 function parallaxx(element, distance, speed) {
   const item = document.querySelector(element);
   item.style.transform = `translateY(${distance * speed}px)`;
