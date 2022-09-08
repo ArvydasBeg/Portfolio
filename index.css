@@ -8,25 +8,40 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 150px;
 }
 header div:first-child {
-  padding-right: 550px;
+  padding-left: 50px;
   color: white;
+  font-size: 40px;
 }
 
 .meniu a {
-  padding-right: 20px;
+  padding-right: 15px;
   color: rgb(255, 142, 13);
+  font-size: 20px;
+}
+
+.meniu a:hover {
+  color: white;
+}
+
+input {
+  background-color: rgb(61, 61, 61);
+  border: 1px solid rgb(255, 142, 13);
+  border-radius: 10px;
+  color: rgb(255, 142, 13);
+  padding: 5px 10px;
+  text-align: center;
 }
 
 /* section */
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 /* left section */
 
@@ -43,8 +58,13 @@ header div:first-child {
   font-size: 40px;
   margin: 0;
 }
+.intro h1:hover {
+  color: white;
+  transition-property: left;
+}
+
 .intro h4 {
-  color: rgba(255, 142, 13, 0.5);
+  color: rgb(255, 142, 13);
   padding-left: 50px;
   margin: 0;
 }
@@ -59,12 +79,15 @@ header div:first-child {
 .intro2 {
   grid-column-start: 2;
   grid-column-end: -1;
-  height: 1000px;
+  height: 2000px;
 }
 .about-me {
   width: 70%;
-  padding-left: 40px;
+  padding-left: 50px;
+  padding-top: 5px;
   color: white;
+  height: 500px;
+  position: sticky;
 }
 /* ilgesnis pristatymas */
 .contact-me {
@@ -74,6 +97,7 @@ header div:first-child {
   border: 2px solid rgb(255, 146, 13);
   padding: 5px 25px;
 }
+
 .contact-me:hover {
   background-color: rgb(255, 142, 13);
   color: rgb(61, 61, 61);
@@ -85,6 +109,9 @@ header div:first-child {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  height: 300px;
+  margin: 250px 0;
+  position: sticky;
 }
 
 .article-icons {
@@ -94,11 +121,11 @@ header div:first-child {
 }
 
 i {
-  padding: 0px 40px;
+  padding: 0px 40px 0 70px;
 }
 
 .article-web {
-  padding: 0px 15px;
+  padding: 0px 45px;
   color: rgb(255, 142, 13);
 }
 
@@ -114,6 +141,9 @@ i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 400px;
+  margin-bottom: 300px;
+  position: sticky;
 }
 
 #let-get-title {
@@ -139,5 +169,6 @@ i {
 footer {
   background-color: brown;
   width: auto;
-  height: 50px;
+  height: 100px;
+  position: relative;
 }

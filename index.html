@@ -11,8 +11,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./index.css" />
     <script src="./index.js" type="module"></script>
+
+    <link rel="stylesheet" href="./index.css" />
     <script
       src="https://kit.fontawesome.com/58c83ef9b9.js"
       crossorigin="anonymous"
@@ -23,12 +24,14 @@
     <!-- meniu -->
     <header>
       <div>
-        <p>Portfolio</p>
+        <p>Portfol<span style="color: rgb(255, 146, 13)">io</span></p>
       </div>
+      <label for="name"></label>
+      <input type="name" placeholder="Enter Your Name" />
       <div class="meniu">
         <a>Home</a>
         <a>About</a>
-        <a>Story</a>
+        <a>Reason</a>
         <a>Contact Us</a>
       </div>
     </header>
@@ -50,7 +53,7 @@
             perfect design. A responsive design makes your website accessible to
             all users, regardless of their devise.
           </p>
-          <button class="contact-me">Contact me</button>
+          <button class="contact-me">Contact Me</button>
         </div>
         <br />
         <!-- pasiulymai -->
@@ -94,13 +97,17 @@
         </div>
         <br />
         <!-- let me get you a beautiful website -->
-        <div class="let-get">
+        <div class="let-get" data-aos="fade-up">
           <div id="let-get-title">Let Me Get You A Beautiful Website</div>
           <button id="hire-me">Hire Me</button>
         </div>
       </main>
     </section>
     <!-- kontaktai -->
-    <footer></footer>
+    <footer>
+      <p>KONTAKTAI</p>
+    </footer>
+
+    <!-- truputis JS -->
   </body>
 </html>
