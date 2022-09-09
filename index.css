@@ -3,19 +3,35 @@ body {
   background-color: rgb(61, 61, 61);
   width: 1000px;
   margin: auto;
+  background-image: url(./foto/background.jpg);
 }
 /* header */
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   height: 150px;
 }
 header div:first-child {
-  padding-left: 50px;
+  padding-left: 20px;
+  padding-right: 180px;
   color: white;
   font-size: 40px;
+}
+
+#button {
+  background-color: rgba(61, 61, 61, 0);
+  border: 1px solid rgb(255, 142, 13);
+  color: rgb(255, 142, 13);
+  border-radius: 10px;
+  padding: 5px 20px;
+  margin: 0 10px;
+}
+#button:hover {
+  background-color: rgb(255, 142, 13);
+  color: rgb(61, 61, 61);
+  transition: 1s;
 }
 
 .meniu a {
@@ -29,12 +45,14 @@ header div:first-child {
 }
 
 input {
-  background-color: rgb(61, 61, 61);
+  background-color: rgba(61, 61, 61, 0);
   border: 1px solid rgb(255, 142, 13);
   border-radius: 10px;
   color: rgb(255, 142, 13);
   padding: 5px 10px;
   text-align: center;
+  width: 150px;
+  margin: 0px 10px;
 }
 
 /* section */
@@ -58,10 +76,6 @@ input {
   font-size: 40px;
   margin: 0;
 }
-.intro h1:hover {
-  color: white;
-  transition-property: left;
-}
 
 .intro h4 {
   color: rgb(255, 142, 13);
@@ -72,6 +86,11 @@ input {
   color: rgb(255, 255, 255);
   padding-left: 50px;
   margin-top: 10px;
+}
+
+.output1 {
+  font-size: 25px;
+  text-transform: capitalize;
 }
 
 /* right section */
@@ -91,7 +110,7 @@ input {
 }
 /* ilgesnis pristatymas */
 .contact-me {
-  background-color: rgb(61, 61, 61);
+  background-color: rgba(61, 61, 61, 0);
   color: rgb(255, 142, 13);
   border-radius: 10px;
   border: 2px solid rgb(255, 146, 13);
@@ -120,7 +139,7 @@ input {
   font-size: 40px;
 }
 
-i {
+.article i {
   padding: 0px 40px 0 70px;
 }
 
@@ -154,7 +173,7 @@ i {
 #hire-me {
   width: 150px;
   border: 2px solid rgb(255, 142, 13);
-  background-color: rgb(61, 61, 61);
+  background-color: rgba(61, 61, 61, 0);
   color: rgb(255, 146, 13);
   border-radius: 10px;
   padding: 5px 25px;
@@ -167,8 +186,39 @@ i {
 
 /* footer */
 footer {
-  background-color: brown;
   width: auto;
   height: 100px;
   position: relative;
+  color: rgb(255, 142, 13);
+}
+#footer-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.output2 {
+  font-size: 25px;
+  text-transform: capitalize;
+  padding-left: 150px;
+}
+
+#flex-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 10px;
+  padding-right: 200px;
+}
+
+.footer-icon {
+  width: 50px;
+  padding: 0 10px;
+  color: rgb(255, 142, 13);
+}
+
+.footer-icon:hover {
+  color: white;
 }
