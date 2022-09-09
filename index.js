@@ -5,7 +5,7 @@ function parallaxx(element, distance, speed) {
 }
 
 window.addEventListener("scroll", () => {
-  parallaxx(".about-me", window.scrollY, 0.6);
+  parallaxx(".about-me", window.scrollY, 0.4);
   parallaxx(".proposals", window.scrollY, 0.3);
   parallaxx(".let-get", window.scrollY, 0.1);
 });

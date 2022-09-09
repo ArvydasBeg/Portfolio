@@ -252,6 +252,33 @@ footer {
   }
 
   .intro {
-    height: 150px;
+    height: 250px;
+    position: relative;
+    padding-right: 50px;
+  }
+  .intro2 {
+    height: 1000px;
+  }
+  .proposals {
+    display: none;
+  }
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding-bottom: 200px;
+    padding-left: 60px;
+    position: relative;
+  }
+  .output2 {
+    display: none;
+  }
+
+  /* footer */
+  #flex-icon {
+    justify-content: flex-start;
+    padding-left: 50px;
   }
 }
