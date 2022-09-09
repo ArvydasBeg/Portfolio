@@ -4,6 +4,7 @@ body {
   width: 1000px;
   margin: auto;
   background-image: url(./foto/background.jpg);
+  font-family: "Tajawal", sans-serif;
 }
 /* header */
 header {
@@ -221,4 +222,36 @@ footer {
 
 .footer-icon:hover {
   color: white;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    width: 390px;
+  }
+  /* meniu laukas su imoutu */
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .meniu {
+    display: none;
+  }
+  .portfolio {
+    display: none;
+  }
+
+  /* section kaire ir desine */
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro {
+    height: 150px;
+  }
 }
